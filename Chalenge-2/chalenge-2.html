@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenge-2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="w-9/12 mx-auto mt-36">
+
+        <!-- একটা ডিসকাউন্ট ক্যালকুলেটর এর প্রাকটিস দিয়েছি। সেটা করো। যেখানে একটা প্রাইস লেখা থাকবে এবং একটা বাটন আছে। সেটাতে ক্লিক
+করলে প্রাইস ৩০% কমে যাবে। এইটার আরেকটু এডভান্সড ভার্সন হবে। তুমি যে Apply বাটনে ক্লিক করবে তখন যদি পাশের টেক্সট বক্স এ
+DISC30 লেখা থাকে তাহলে ডিসকাউন্ট কাজ করবে। প্রাইস ৩০% কমবে। আর যদি DISC30 না লিখে অন্য কিছু লিখে। যেমন ধরো DOM30 বা
+DISCOUNT30 বা অন্য কিছু। তাহলে ডিসকাউন্ট কাজ হবে না। -->
+
+        <section class="grid grid-cols-4 gap-6 w-full">
+            <div class="card border-2 p-2 bg-gray-100 rounded-xl shadow-lg">
+                <img class="rounded-xl" src="./images/r15-right-front-three-quarter-16.png" alt="">
+                <div class=" flex justify-between items-center mt-8">
+                    <h2 class="font-bold text-xl text-blue-700 bg-gray-300 py-4 px-2 rounded-lg">Price :
+                        <span>$<span class="text-lg " id="regular-price">5500</span></span>
+                    </h2>
+                    <button id="btn-discount" class=" bg-green-700 text-white py-4 px-2  rounded-lg">DISCOUNT 30%</button>
+                </div>
+            </div>
+            <div class="card border-2 p-2 bg-gray-100 rounded-xl shadow-lg">
+                <img class="rounded-xl" src="./images/r15-right-front-three-quarter-16.png" alt="">
+                <input id="token-inout" class="w-full p-2 mt-3 bg-gray-300 rounded-lg outline-none" placeholder="Type your Token Number for 30% Discount" type="password">
+                <div class=" flex justify-between items-center mt-3">
+                    <h2 class="font-bold text-xl text-blue-700 bg-gray-300 p-2 rounded-lg">Price :
+                        <span>$<span id="before-regular-price" class="text-lg ">5500</span></span>
+                    </h2>
+                    <button id="btn-apply" class="bg-green-700 text-white p-2  rounded-lg hover:bg-red-600 duration-300">Apply for Discount</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/discount.js"></script>
+    <script src="./js/apply-for-discount.js"></script>
+</body>
+
+</html>
