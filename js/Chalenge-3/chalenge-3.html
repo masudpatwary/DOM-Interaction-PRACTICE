@@ -1,0 +1,56 @@
+<!-- Text Editor টাইপের একটা লে-আউট বানাবে। সেখানে একটা Textarea থাকবে। সাথে বেশ কিছু বাটন থাকবে। এদের মধ্যে কোনো একটি বাটনে
+ক্লিক করলে textarea এর ভিতরের লিখা গুলোর স্টাইল বোল্ড হয়ে যাবে। ঠিক একইভাবে অন্যবাটন গুলো ব্যাবহার করে দেখো ইটালিক,
+আন্ডারলাইন, লেফট অ্যালাইন, রাইট অ্যালাইন, সেন্টার অ্যালাইন করতে পারো কিনা। এছাড়া একটা নম্বর টাইপের ইনপুট ফিল্ডে ফন্ট
+সাইজ ইনপুট নিবে। এরপর সে ভ্যালু ব্যাবহার করে টেক্সটের সাইজ পরিবর্তন করবে। আরেকটা নতুন জিনিস ট্রাই করতে পারো। টেক্সট
+গুলোর কালার পরিবর্তন করার চেষ্টা করে দেখতে পারো। এরজন্য ইনপুট এর type=”color” সম্পর্কে একটু জানতে হবে। -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsof Word</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aa41ddffc0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="mt-16">
+    <main class="bg-blue-300 w-8/12 mx-auto pb-8 px-8">
+        <h1 class="text-4xl font-bold text-center pt-4">Word Excel</h1>
+        <div class="mb-6 p-3 mt-2 flex justify-between">
+            <ul class="flex gap-8 text-2xl">
+                <li><button id="bold-btn"><i class="fa-solid fa-bold"></i></button></i></li>
+                <li><button id="italic-btn"><i class="fa-solid fa-italic"></i></button></i></li>
+                <li><button id="underline-btn"><i class="fa-solid fa-underline"></i></button></i></li>
+            </ul>
+            <ul class="flex gap-10 text-2xl">
+                <li><button id="bton-left"><i class="fa-solid fa-align-left"></i></button></li>
+                <li><button id="bton-center"><i class="fa-solid fa-align-center"></i></button></li>
+                <li><button id="btn-right"><i class="fa-solid fa-align-right"></i></button></li>
+                <li><button id="btn-justify"><i class="fa-solid fa-align-justify"></i></button></li>
+            </ul>
+            <ul class="flex gap-8 text-2xl">
+                <li class="cursor-pointer">44</li>
+                <li class="cursor-pointer">Aa</li>
+                <button><input id="color-picker" type="color" id="favcolor" name="favcolor"
+                        value="#ff0000"></i></button>
+                </li>
+            </ul>
+        </div>
+        <div id="content" class=" w-800 h-500 bg-white p-4 shadow-lg min-h-[400px]" contenteditable="true"
+            spellcheck="false">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consectetur quo, sequi quam modi minus
+            libero officia. Vero est sed cumque praesentium, laboriosam voluptas minus non, doloribus corporis
+            nobislorem35
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis exercitationem commodi corrupti
+            accusamus provident maiores esse, sed, doloribus dicta ex quam magnam architecto sequi odio? Enim inventore
+            dignissimos laborum?
+            odit.
+        </div>
+    </main>
+    <script src="./js/word.js"></script>
+</body>
+
+</html>
