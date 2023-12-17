@@ -44,3 +44,5 @@ const colorPicker = document.getElementById("color-picker");
 colorPicker.addEventListener("input", () => {
   document.execCommand("forecolor", false, colorPicker.value);
 });
+
+//**/altter style */
